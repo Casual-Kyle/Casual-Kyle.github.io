@@ -45,6 +45,7 @@ body{
 .sidebar li{
 	list-style-type: none;
 	font-size: 24px;
+	font-family: Courier, Verdana, sans-serif;
 	
 }
 
@@ -55,7 +56,7 @@ body{
 	background-color: grey;
 	position: relative;
 	left: 10%;
-	color: green;
+	color: orange;
 	padding: 1% 2%;
 	width: 90%;
 	border-left: 3px solid black;
@@ -63,6 +64,15 @@ body{
 
 }
 
+.content h1{
+	color: white;
+	font-family: Courier, Verdana, sans-serif;
+}
+
+.content p{
+	font-family: sans-serif, Courier, Verdana;
+	padding: 5px 0;
+}
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
