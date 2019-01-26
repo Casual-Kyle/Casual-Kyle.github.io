@@ -6,8 +6,8 @@ body{
 
 /* The Header */
 .header{
-	width: 100%;
 	height: 70px;
+	width: 100%;
 	background: #232526; 
 		/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #232526 , #414345); 
@@ -35,9 +35,8 @@ body{
 	position: absolute;
 	left: 0;
 	top: 71;
-	min-height: 100vh;;
-	height: auto;
-	width: 160px;
+	width: auto;
+	max-width: 10%;
 	text-align: left;
 	overflow: hidden; 
 	padding-left: 5px;
@@ -51,12 +50,17 @@ body{
 
 
 .content{
+	min-height: 100vh;
 	border-left: 3px solid black;
 	background-color: grey;
 	position: relative;
-	left: 161px;
+	left: 10%;
 	color: green;
 	padding: 1% 2%;
+	width: 90%;
+	border-left: 3px solid black;
+	max-width: 90%
+
 }
 
 
