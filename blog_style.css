@@ -1,0 +1,16 @@
+
+
+
+
+
+.content p{
+	background: #DBDBDB;
+	background: -webkit-linear-gradient(to right, #ADA996 , #F2F2F2,
+		#DBDBDB, #EAEAEA); 
+	background: linear-gradient(90deg, #ADA996 , #F2F2F2,
+		#DBDBDB, #EAEAEA);
+	padding: 1%;
+	color: #000000;
+	margin-bottom: 2%; 
+}
+
