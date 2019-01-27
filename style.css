@@ -77,6 +77,7 @@ body{
 	background: -webkit-linear-gradient(to right, #232526 , #414345); 
 		/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(90deg, #232526 , #414345);
+	margin-top: 1.0vw;
 	margin-bottom: 2.0vw;
 	min-height: .75vh;
 }
@@ -96,7 +97,7 @@ body{
 
 .dropdown-content{
 	position: relative;
-	margin-top: -20.25%;
+	margin-top: -25%;
 	display: inline-block;
 }
 
@@ -111,13 +112,12 @@ body{
 	min-width: 75%;
 	z-index: 1;
 
-	padding: 10%;
-	padding-right: 5%;
+	padding: 10% 15%;
 
 }
 
 #followMe{
-	padding-bottom: 5px;
+	padding-bottom: 5%;
 }
 
 /*start of main content, the big body*/
