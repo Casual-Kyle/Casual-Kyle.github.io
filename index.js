@@ -14,3 +14,10 @@ function dropdownOut(){
 	var hiddenBox = document.getElementsByClassName("dropdown-content");
 	hiddenBox[0].style.display = 'none';
 };
+
+/////////////////////////////////////////////////////
+
+
+function titleSubTextChange(obj){
+
+};

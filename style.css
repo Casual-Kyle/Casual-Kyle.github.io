@@ -8,7 +8,6 @@ body{
 
 /* The Header */
 .header{
-	height: 70px;
 	width: 100%;
 	background: #232526; 
 		/* fallback for old browsers */
@@ -102,9 +101,10 @@ body{
 }
 
 .dropdown-content{
-	display: none; /*shows our hidden box*/
-	position: absolute;
-	background: #f49945;
+	display: none; /*makes our list drop-down box hidden*/
+	position: absolute; /*Makes the positoin of the box relative to the sidebar*/
+	border-radius: 25px; /*Rounds the corners of our box*/
+	background: #f49945; /*Background color/s for when multiple browser types*/
 	background: -webkit-linear-gradient(to right, #f49945 , #f4bf45); 
 		/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(90deg, #f49945 , #f4bf45);
@@ -144,25 +144,85 @@ body{
 .content p{
 	font-family: sans-serif, Courier, Verdana;
 	padding: 5px 0;
+	letter-spacing: 1px; /*Makes the letters all spaced out a little more*/
+	word-spacing: 3px; /*Puts spaces between words*/
 }
 
 
 
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-	.sidebar li{
-		font-size: 12px;
-	}
+
+.header{
+	height: 35px;
+}
+
+.header h1{
+	color: #f18a47;
+	font-size: 15px;
+	
+}
+
+.header h3{
+	color: white;
+	font-size: 10px;
+}
+
+
+.sidebar li{
+		font-size: 9px;
+}
+
+
+.dropdown-content{
+	border-radius: 0px;
+}
+
+
+.content p{
+
+}
 
 }
 
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-	.sidebar li{
-		font-size: 20px;
-	}
 
+.header{
+	height: 70px;
+}
+
+.header{
+	padding-bottom: 
+}
+
+.header h1{
+	color: #f18a47;
+	font-size: 25px;
+}
+
+.header h3{
+	color: white;
+	font-size: 15px;
+}
+
+
+
+.sidebar li{
+	font-size: 15px;
+}
+
+
+.dropdown-content{
+	border-radius: 14px;
+}
+
+
+
+.content p{
+	
+}
 
 }
 
@@ -172,9 +232,33 @@ body{
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-	.sidebar li{
-		font-size: 25px;
-	}
+
+.header{
+	height: 70px;
+}
+
+.header h1{
+	color: #f18a47;
+	font-size: 25px;
+	
+}
+
+.header h3{
+	color: white;
+	font-size: 15px;
+}
+
+
+
+.sidebar li{
+	font-size: 25px;
+}
+
+
+
+.content p{
+	
+}
 
 }
 
