@@ -8,6 +8,7 @@ body{
 
 /* The Header */
 .header{
+	height: 70px;
 	width: 100%;
 	background: #232526; 
 		/* fallback for old browsers */
@@ -116,6 +117,8 @@ body{
 
 }
 
+
+
 #followMe{
 	padding-bottom: 5%;
 }
@@ -130,7 +133,7 @@ body{
 	left: 13%;
 	color: #f18a47;
 	padding: 1% 2%;
-	width: 90%;
+	/*width: 90%;*/
 	border-left: 3px solid black;
 	max-width: 87%
 
@@ -153,79 +156,54 @@ body{
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
 
-.header{
-	height: 35px;
+.sidebar{
+	max-width: 22%;
 }
 
-.header h1{
-	color: #f18a47;
-	font-size: 15px;
-	
+.sidebar li{
+		font-size: 15px;
+		padding-bottom: 10%;
 }
 
-.header h3{
-	color: white;
+.dropdown-content li{
 	font-size: 10px;
 }
 
 
-.sidebar li{
-		font-size: 9px;
-}
 
-
-.dropdown-content{
-	border-radius: 0px;
-}
-
-
-.content p{
+.content{
+	left: 23%;
+	border-left: 3px solid black;
+	max-width: 77%
 
 }
 
 }
-
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
-.header{
-	height: 70px;
+
+.sidebar{
+	max-width: 17%;
 }
-
-.header{
-	padding-bottom: 
-}
-
-.header h1{
-	color: #f18a47;
-	font-size: 25px;
-}
-
-.header h3{
-	color: white;
-	font-size: 15px;
-}
-
-
 
 .sidebar li{
+	font-size: 20px;
+}
+
+.dropdown-content li{
 	font-size: 15px;
 }
 
-
-.dropdown-content{
-	border-radius: 14px;
-}
-
-
-
-.content p{
-	
-}
+.content{
+	left: 18%;
+	border-left: 3px solid black;
+	max-width: 82%
 
 }
 
+}
 
 
 
@@ -233,32 +211,16 @@ body{
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
 
-.header{
-	height: 70px;
-}
-
-.header h1{
-	color: #f18a47;
-	font-size: 25px;
-	
-}
-
-.header h3{
-	color: white;
-	font-size: 15px;
-}
-
-
 
 .sidebar li{
 	font-size: 25px;
 }
 
 
-
-.content p{
-	
+.dropdown-content li{
+	font-size: 20px;
 }
 
 }
+
 
