@@ -6,15 +6,15 @@
 		<link href="style.css" rel="stylesheet">
 		<link href="blog_style.css" rel="stylesheet">
 
-		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="standard.js"></script>
 
 		<title>Casual Kyle | Dev Blog</title>
 	</head>
 
 	<body>
 		<div class="header">
-			<h1>Kyle J.</h1>
-			<h3>also known as Casual Kyle</h3>
+			<h1 onclick="RandomColor(this)">Kyle J.</h1>
+			<h3 onclick="textChange(this)" id="alsoKnown">also known as Casual Kyle</h3>
 		</div>
 
 		<div class="sidebar">
@@ -53,6 +53,13 @@
 			<p>
 				<b>01/26/2019</b> <br/> <br/>
 				The first post of the Developer Blog section. A harwritten blog post, for this new static website. The index.html page has been set up, and I'm still contemplating what to do with it. I'm contemplating putting up some beginner projects on it, to display my progression. I've added a dropdown menu, of my own devising so it's not as clean as some I've seen online. However, it is mine and it will get better as I become more proficient with Javascript. Hopefully.... Regardless the website is now linked to my GitHub, and my Youtube where I will eventually upload Javascript(JS) videos of my projects. Mainly so I can track my own progress.
+				<br/>
+				<br/>
+				Later that day... So I've added some basic JS to the page, made some changes to the way the screen orientates it's width and font of the sidebar as the screen size changes. It's not perfect, but it's my first day and I so despise just ripping code off from other people. So it's my own code, with trial and error. Except for the RandomColor function. I will admit I ripped that off, as I'm not used to making random numbers in this language yet, without Python's
+				<i>import random, random.randint()</i>. 
+				<br/>
+				<br/>
+				To spice up the page I've added a onclick() feature to the Header, which if clicking on the Title will change it's color, and clicking on the Subtitle it will make a kind of 'Splash' text which I drew inspiration from Minecraft for.
 			</p>
 
 		</div>
