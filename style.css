@@ -104,7 +104,7 @@ body{
 .dropdown-content{
 	display: none; /*makes our list drop-down box hidden*/
 	position: absolute; /*Makes the positoin of the box relative to the sidebar*/
-	border-radius: 25px; /*Rounds the corners of our box*/
+	border-radius: 10px; /*Rounds the corners of our box*/
 	background: #f49945; /*Background color/s for when multiple browser types*/
 	background: -webkit-linear-gradient(to right, #f49945 , #f4bf45); 
 		/* Chrome 10-25, Safari 5.1-6 */
@@ -146,10 +146,21 @@ body{
 
 .content p{
 	font-family: sans-serif, Courier, Verdana;
-	padding: 5px 0;
+	padding: 5px 0px 10px 0px; /*Top, right, bottom left*/
 	letter-spacing: 1px; /*Makes the letters all spaced out a little more*/
 	word-spacing: 3px; /*Puts spaces between words*/
 }
+
+.content a:link,
+.content a:visited{
+	color: #BB9D86;
+	text-decoration: none;
+}
+
+.content a:hover{
+	text-decoration: underline;
+}
+
 
 
 
