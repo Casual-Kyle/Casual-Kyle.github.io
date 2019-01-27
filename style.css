@@ -40,12 +40,15 @@ body{
 	left: 0;
 	top: 71;
 	width: auto;
-	padding: 1%; 
+	padding: 1%;
+	padding-bottom: 50vh; /*Needed as the 
+	dropdown box wasn't able to be seen as it overstepped the outside
+	bounds of this box*/ 
 	max-width: 12%;
 	margin-right: 1%;
 	text-align: left;
 	overflow: hidden; 
-	border: 1px solid white; /* Just a Temporary Border - remove this*/
+	/*border: 1px solid white;  Just a Temporary Border - remove this*/
 	display: flex;
 	flex-wrap: wrap;
 	
@@ -93,7 +96,7 @@ body{
 
 .dropdown-content{
 	position: relative;
-	margin-top: -18%;
+	margin-top: -20.25%;
 	display: inline-block;
 }
 
@@ -104,14 +107,18 @@ body{
 	background: -webkit-linear-gradient(to right, #f49945 , #f4bf45); 
 		/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(90deg, #f49945 , #f4bf45);
-	padding: 5%;
-
-	min-width: 160px;
+	
+	min-width: 75%;
 	z-index: 1;
+
+	padding: 10%;
+	padding-right: 5%;
+
 }
 
-
-
+#followMe{
+	padding-bottom: 5px;
+}
 
 /*start of main content, the big body*/
 
