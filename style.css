@@ -18,7 +18,7 @@ body{
 		/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: Verdana, Courier, sans-serif;
 	text-align: center;
-	
+	z-index: 1;
 }
 
 .header h1{
@@ -38,7 +38,7 @@ body{
 .sidebar{
 	position: absolute;
 	left: 0;
-	top: 71;
+	top: 71px;
 	width: auto;
 	padding: 1%;
 	padding-bottom: 50vh; /*Needed as the 
@@ -51,6 +51,7 @@ body{
 	/*border: 1px solid white;  Just a Temporary Border - remove this*/
 	display: flex;
 	flex-wrap: wrap;
+
 	
 }
 
@@ -126,7 +127,7 @@ body{
 /*start of main content, the big body*/
 
 .content{
-	min-height: 100vh;
+	min-height: 95vh; /*used to be 100vh*/
 	border-left: 3px solid black;
 	background-color: #505050;
 	position: relative;
