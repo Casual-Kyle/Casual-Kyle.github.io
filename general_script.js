@@ -11,7 +11,7 @@ function populateField(obj){
 
 
 
-function testField(){
+function diceRoller(){
 	var firstInput = document.getElementById("diceField").value;
 	var secondInput = document.getElementById("answerField");
 	/*
