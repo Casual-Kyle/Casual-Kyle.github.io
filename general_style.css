@@ -2,6 +2,10 @@
 
 
 
+.dice_roller h1{
+	color: #f18a47;
+}
+
 
 .dice_roller{
 	border: 1px solid black;
@@ -10,9 +14,10 @@
 	background: -webkit-linear-gradient(to right, #232526 , #414345); 
 		/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(90deg, #232526 , #414345); 
-	color: white;
+	/*color: #f18a47;*/
 	width: 500px;
-	height: 500px;
+	min-height: 520px;
+	height: auto;
 	padding: 15px 15px;
 }
 
@@ -23,3 +28,22 @@
 	max-width: 200px;
 }
 
+.dice_roller input{
+	border: 1.5px solid #f18a47;
+	background: #FFA76D;
+}
+
+#dice_roller_line{
+	position: relative;
+	margin: 10px 0px;
+	height: 5px;
+	background: white;
+			/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #232526 , #414345); 
+		/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(90deg, #232526 , #414345);
+	
+	background-color: orange;
+	background: -webkit-linear-gradient(to right, #f46b45, #eea849);
+	background: linear-gradient(90deg, #f46b45, #eea849)
+}
