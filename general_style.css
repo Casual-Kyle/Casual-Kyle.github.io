@@ -1,0 +1,25 @@
+
+
+
+
+
+.dice_roller{
+	border: 1px solid black;
+	background: #232526; 
+		/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #232526 , #414345); 
+		/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(90deg, #232526 , #414345); 
+	color: white;
+	width: 500px;
+	height: 500px;
+	padding: 15px 15px;
+}
+
+.dice_roller input,
+.dice_roller button{
+	min-width: 10px;
+	width: auto;
+	max-width: 200px;
+}
+
