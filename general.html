@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset="utf-8">
+		<link href="reset.css" rel="stylesheet">
+		
+		<link href="style.css" rel="stylesheet">
+
+		<link href="general_style.css" rel="stylesheet">
+
+
+		<script type="text/javascript" src="standard.js"></script>
+		<script type="text/javascript" src="general_script.js"></script>
+
+		<title>Casual Kyle | Home</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1 onclick="RandomColor(this)">Kyle J.</h1>
+			<h3 onclick="textChange(this)" id="alsoKnown">also known as Casual Kyle</h3>
+		</div>
+
+		<div class="sidebar">
+			<ul>
+				<li><a href="index.html"><b>Home</b></a></li>
+				
+				<li><a href="blog.html"><b>Dev. Blog</b></a></li>
+				
+				<!--The On Click Dropdown over might not be needed, we'll see on mobile if it is useful-->
+				<li onmouseover="dropdownOver()" onmouseout="dropdownOut()" onclick="dropdownOver()"  class='dropDownButton' id=followMe><b>Follow Me ></b></li>
+					<ul id="followMeDropdown" class="dropdown-content">
+
+						<li onmouseover="dropdownOver()" onmouseout="dropdownOut()"><a href="https://github.com/Casual-Kyle">GitHub</a></li>
+						<li onmouseover="dropdownOver()" onmouseout="dropdownOut()"><a href="https://www.youtube.com/channel/UC88zl_5aXY7fjqXLfg9wN2A">Youtube</a></li>
+						<li onmouseover="dropdownOver()" onmouseout="dropdownOut()"><a href="#">Dungeons & Dragons Table</a></li>
+					</ul>
+
+
+				<div class="horizontal_line"> </div>
+
+				<li><a href="general.html">General</a></li>
+				<li>Place Holder Text</li>
+			</ul>
+		</div>
+
+		
+
+		<div class="content">
+
+
+			<div class="dice_roller">
+
+				Dice Input:<br/>
+				<input id="diceField">
+				<button onclick="testField(this)" id="diceBtn">Click Me</button>
+
+
+				<br/> <br/>
+
+
+				Dice Roll Answer:<br/>
+				<input id="answerField">
+			
+
+
+
+			</div>
+
+
+
+
+
+
+			<h1>Dice Roller</h1>
+
+			<p>
+				Description of dice roller
+			</p>
+			
+		</div>
+
+
+	</body>
+</html>
+
