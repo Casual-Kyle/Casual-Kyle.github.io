@@ -39,7 +39,10 @@ function textChange(obj){
 		"Bibbity Bobbity",
 		"That's what I'm talking about!",
 		"Bingo Bango Bongo",
-		"Wait. This isn't a Minecraft splash, is it?"];
+		"Wait. This isn't a Minecraft splash, is it?",
+		"Can I be Norm from Cheers?",
+		"Say what one more time!",
+		"It's 5 o'clock somewhere..."];
 
 	/*This while loop varifies that the current text on the screen is not
 	the same as the text that is generated. Thusly */
