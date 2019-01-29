@@ -45,5 +45,69 @@
 	
 	background-color: orange;
 	background: -webkit-linear-gradient(to right, #f46b45, #eea849);
-	background: linear-gradient(90deg, #f46b45, #eea849)
+	background: linear-gradient(90deg, #f46b45, #eea849);
+}
+
+/*/////////////////////////*/
+
+
+.holdingBox{
+	height: 51px;
+	margin-bottom: 10px;
+}
+
+.holdingBox div,
+.holdingBox button{
+	float:left;
+}
+
+.holdingBox button{
+	position: relative;
+	top: 35%;
+	left: 4%;
+}
+
+
+.newCharacterStatsRoller h1{
+	color: #f18a47;
+}
+
+.newCharacterStatsRoller{
+	border: 1px solid black;
+	background: #232526; 
+		/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #232526 , #414345); 
+		/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(90deg, #232526 , #414345); 
+	/*color: #f18a47;*/
+	width: 500px;
+	min-height: 520px;
+	height: auto;
+	padding: 15px 15px;
+}
+
+
+.newCharacterStatsRoller input,
+.newCharacterStatsRoller button{
+	min-width: 10px;
+	width: auto;
+	max-width: 200px;
+}
+
+.newCharacterStatsRoller input{
+	border: 1.5px solid #f18a47;
+	background: #FFA76D;
+}
+
+.statBox{	
+	color: black;
+	height: 50px;
+	width: 50px;
+	background: #e4e0dd;
+	text-align: center;
+	border: 2px inset #FFA76D;
+}
+
+.statBox p{
+	top: 50%;
 }

@@ -95,3 +95,51 @@ function diceRoller(){
 
 	secondInput.value = returningValues;
 };
+
+
+
+function statGenRandom(obj){
+	var buttonPressed = obj.id;
+	console.log("Button That Was Pressed: " + buttonPressed);
+
+	var strengthNum 	= document.getElementById("strNum");
+	var constitutionNum = document.getElementById("conNum");
+	var dexterityNum 	= document.getElementById("dexNum");
+	var intelligenceNum = document.getElementById("intNum");
+	var charismaNum 	= document.getElementById("chaNum");
+	var wisdomNum 		= document.getElementById("wisNum");
+
+	var strengthBtn 	= document.getElementById("strBtn").id;
+	var constitutionBtn = document.getElementById("conBtn").id;
+	var dexterityBtn 	= document.getElementById("dexBtn").id;
+	var intelligenceBtn = document.getElementById("intBtn").id;
+	var charismaBtn 	= document.getElementById("chaBtn").id;
+	var wisdomBtn 		= document.getElementById("wisBtn").id;
+
+
+	console.log("buttonPressed: "+buttonPressed);
+	console.log("strengthBtn: "+strengthBtn);
+
+	if (buttonPressed == strengthBtn){
+		console.log("strengthBtn was pressed");
+		if (strengthNum.innerHTML == "strBtn P'd"){
+			strengthNum.innerHTML = "20 1";
+		} else {
+			strengthNum.innerHTML = "strBtn P'd";
+		};
+	} else if (buttonPressed == constitutionBtn){
+		console.log("constitutionBtn was pressed");
+	} else if (buttonPressed == dexterityBtn){
+		console.log("dexterityBtn was pressed");
+	} else if (buttonPressed == intelligenceBtn){
+		console.log("intelligenceBtn was pressed");
+	} else if (buttonPressed == charismaBtn){
+		console.log("charismaBtn was pressed");
+	} else if (buttonPressed == charismaBtn){
+		console.log("wisdomBtn was pressed");
+	};
+
+
+
+	//strengthNum.innerHTML = "this_is_me"
+};

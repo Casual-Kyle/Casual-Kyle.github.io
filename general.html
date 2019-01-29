@@ -48,8 +48,7 @@
 
 		<div class="content">
 
-
-			<div class="dice_roller">
+			<div class="dice_roller" id="diceRoller">
 				<h1>Dice Roller</h1> <br/><br/>
 
 				Dice Input:<br/>
@@ -62,6 +61,7 @@
 
 				Dice Roll Answer:<br/>
 				<input id="answerField">
+				
 
 				<div id="dice_roller_line"></div> 
 
@@ -86,10 +86,51 @@
 				<br/> <br/>
 
 				<b>Dice Answer</b>: The dice roll answer field will display a # or a #, #, # depending on how many inputs you input. Each one will be sequential based on the order you put them into the Dice Input field. The '= #' is the total of all the numbers rolled, for quick math. It was requested by a friend, and so it was added
+			</div>
+
+			<br/> <br/> <br/>
+
+			<div class="newCharacterStatsRoller" id="charStatsRoll">
+
+				<h1>D&D Random Stat. Gen.</h1> <br/><br/>
+
+				Work in progress
+
+				<div class="holdingBox">
+					<div class="statBox">STR<p id="strNum">20 1</p></div>
+					<button onclick="statGenRandom(this)" id="strBtn">The button</button>
+				</div>
+
+				<div class="holdingBox">
+					<div class="statBox">CON<p id="conNum">20</p></div>
+					<button onclick="statGenRandom(this)" id="conBtn">The button</button>
+				</div>
+
+				<div class="holdingBox">
+					<div class="statBox">DEX<p id="dexNum">20</p></div>
+					<button onclick="statGenRandom(this)" id="dexBtn">The button</button>
+				</div>
+
+
+				<div class="holdingBox">
+					<div class="statBox">INT<p id="intNum">20</p></div>
+					<button onclick="statGenRandom(this)" id="intBtn">The button</button>
+				</div>
+
+				<div class="holdingBox">
+					<div class="statBox">CHA<p id="chaNum">20</p></div>
+					<button onclick="statGenRandom(this)" id="chaBtn">The button</button>
+				</div>
+
+				<div class="holdingBox">
+					<div class="statBox">WIS<p id="wisNum">20</p></div>
+					<button onclick="statGenRandom(this)" id="wisBtn">The button</button>
+				</div>
+
 
 			</div>
-			
-			
+
+
 		</div>
 
 
