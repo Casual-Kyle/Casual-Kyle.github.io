@@ -42,7 +42,9 @@ function textChange(obj){
 		"Wait. This isn't a Minecraft splash, is it?",
 		"Can I be Norm from Cheers?",
 		"Say what one more time!",
-		"It's 5 o'clock somewhere..."];
+		"It's 5 o'clock somewhere...",
+		"If only I was wearing cotton chinos",
+		"English! Do you speak it?"];
 
 	/*This while loop varifies that the current text on the screen is not
 	the same as the text that is generated. Thusly */
