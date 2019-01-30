@@ -54,6 +54,7 @@
 .holdingBox{
 	height: 51px;
 	margin-bottom: 10px;
+	width: 150px;
 }
 
 .holdingBox div,
@@ -67,6 +68,16 @@
 	left: 4%;
 }
 
+#charStatsRoll{
+	float: left;
+}
+
+
+.newCharStatTextBox{
+	float:right;
+	position: relative;
+	width: 300px;
+}
 
 .newCharacterStatsRoller h1{
 	color: #f18a47;
@@ -111,3 +122,4 @@
 .statBox p{
 	top: 50%;
 }
+
