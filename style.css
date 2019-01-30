@@ -127,7 +127,7 @@ body{
 /*start of main content, the big body*/
 
 .content{
-	min-height: 120vh; /*used to be 100vh*/
+	min-height: 100vh; /*min height for the content section for all pages*/
 	border-left: 3px solid black;
 	border-bottom: 3px solid black; /* */
 	background-color: #505050;

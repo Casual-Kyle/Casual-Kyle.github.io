@@ -1,6 +1,9 @@
 
 
-
+.content{
+	min-height: 120vh; /*This page needs to have a higher min high
+	for the content section*/
+}
 
 .dice_roller h1{
 	color: #f18a47;
