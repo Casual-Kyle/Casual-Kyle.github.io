@@ -127,8 +127,7 @@ body{
 /*start of main content, the big body*/
 
 .content{
-	min-height: 102vh; /*used to be 100vh*/
-	height: auto;
+	min-height: 120vh; /*used to be 100vh*/
 	border-left: 3px solid black;
 	border-bottom: 3px solid black; /* */
 	background-color: #505050;
