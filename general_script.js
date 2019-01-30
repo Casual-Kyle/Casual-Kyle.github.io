@@ -211,17 +211,8 @@ function statGenRandom(obj){
 		chaStat = charismaNum.innerHTML;
 		wisStat = wisdomNum.innerHTML;
 
-
-		
-
-
-
-
 	};
-
-	console.log("Stats: ", strStat, conStat, dexStat, intStat, chaStat, wisStat);
 	
-
 	var statArray = [strStat,
 						conStat,
 						dexStat,
@@ -229,16 +220,11 @@ function statGenRandom(obj){
 						chaStat,
 						wisStat];
 
-
-	console.log("statArray: ", statArray);
-
-
 	statArray.sort(function(a,b){return b-a});
-	console.log("sorted array: ", statArray);
+
 
 	var highestStat = statArray[0];
 	var highStatsArray = []; //might be relevant, maybe not
-	console.log("highest: ", highestStat)
 
 	var secHighestStat = 0
 	var secHighStatsArray = []; //might be relevant, maybe not
@@ -255,7 +241,7 @@ function statGenRandom(obj){
 	};
 
 
-	for (var x = 0; x < 6; x++){
+	for (var x = 0; x < 6; x++){ //might not need this entire for loop
 		if (statArray[x] == highestStat){
 			console.log("stat vs, highest stat: ", statArray[x], highestStat);
 			highStatsArray.push(statArray[x]);
@@ -267,21 +253,55 @@ function statGenRandom(obj){
 		};
 	};
 
+	var classArray = [];
 
+	if (highestStat == strStat){
+		classArray.push("Barbarian");
+		classArray.push("Fighter");
+		if (chaStat >= 13){
+			classArray.push("Paladin");
+		};
+	};
 
+	if (highestStat == conStat){ //highest stat is Constitution
+		classArray.push("Con. is not a recommended Primary Stat<br/>");
 
-	console.log("High Stats: ", highStatsArray);
-	console.log("Secon High: ", secHighStatsArray);
+	};
 
-	/*
-		basically if highestStat == strStat
-			if secondHigh stat == conStat
-				barbarian
-			elif secondHigh stat == wisStat
-				paladin
-			elif secondHigh stat == intStat
-				fighter - arcane?
-	*/
+	if (highestStat == dexStat){ //highest stat is Dexterity
+		classArray.push("Fighter");
+		classArray.push("Rogue");
+		if (chaStat >= 13){
+			classArray.push("Monk");
+		};
 
+		if (wisStat >= 13){
+			classArray.push("Ranger");
+		};
+	};
 
+	if (highestStat == intStat){ //highest stat is Intelligence
+		classArray.push("Wizard");
+	};
+
+	if (highestStat == chaStat){ //highest stat is Charisma
+		classArray.push("Bard");
+		classArray.push("Sorcerer");
+		classArray.push("Warlock");
+	};
+
+	if (highestStat == wisStat){ //highest stat is Wisdom
+		classArray.push("Cleric");
+		classArray.push("Druid");
+	};
+
+	recClassText = document.getElementById("recClassPara");
+
+	var newRecommendString = "";
+	for (var i = 0; i < classArray.length; i++){
+		newRecommendString += classArray[i];
+		newRecommendString += "<br/>";
+	}
+
+	recClassText.innerHTML = newRecommendString;
 };
